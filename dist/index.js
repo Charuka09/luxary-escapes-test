@@ -22,9 +22,9 @@ const twoSum = function (nums, target) {
         cache.set(target - num, index);
     });
     for (let i = 0; i < nums.length; i++) {
-        //checking wheather the diff is in the cache.
+        //checking whether the diff is in the cache.
         if (cache.has(nums[i])) {
-            //if the value is in the cache retrun the incices of them in the nums array
+            //if the value is in the cache return the indices of them in the nums array
             return [i, cache.get(nums[i])];
         }
     }
